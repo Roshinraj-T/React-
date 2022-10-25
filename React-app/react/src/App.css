@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: rgba(153, 153, 153, 0.244);
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 0.5rem;
+  background-color: white;
+}
+
+.header,
+.footer {
+  border: 2px solid blue;
+}
+
+/* form */
+.form {
+  height: 40rem;
+  background: linear-gradient(purple, pink);
+  margin: 1rem;
+  position: relative;
+}
+
+.error-info {
+  color: red;
+  margin-top: 0.2rem;
+  font-weight: 400;
+}
+
+.form-container {
+  background-color: white;
+  width: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.form-container h3 {
+  margin-top: 0;
+  color: #666;
+}
+
+.form-box-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 0.4rem;
+  column-gap: 4rem;
+}
+
+input {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.4rem 0rem;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.gender {
+  display: flex;
+  margin-top: 0.6rem;
+  gap: 1rem;
+}
+
+.gender input {
+  width: fit-content;
+}
+
+.gender label {
+  font-size: 1rem;
+}
+
+.form-box-2 select {
+  width: 100%;
+  padding: 0.4rem 0rem;
+  margin-top: 0.4rem;
+}
+
+.submit-btn {
+  border: none;
+  background-color: #4040ff;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1.4rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer-box {
+  justify-content: center;
+}
+
+.footer-box a {
+  padding: 0.6rem 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.btn {
+  margin: 0 auto;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+  .form-box-1 {
+    display: block;
+  }
+  .form-container {
+    width: 70vw;
+  }
+
+  input {
+    width: 70%;
+  }
+  input,
+  .submit-btn {
+    margin-top: 0;
+  }
+}
